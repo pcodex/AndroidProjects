@@ -1,0 +1,33 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickAct" >
+    
+    <AnalogClock
+        android:id="@+id/AnaClk"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"         
+        android:minHeight="100dp"
+        android:minWidth="240dp"
+               
+     />
+    
+    <Button 
+        android:text="@string/butt_Bac"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="150dp"
+        android:layout_y="210dp"
+        android:onClick="sendMeBac"
+        />
+    
+<!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/title_activity_click" /> 
+    -->
+
+</AbsoluteLayout>
