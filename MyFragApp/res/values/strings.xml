@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyFragApp</string>
+    <string name="hello_world">Hello Prab!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="btn_start_a_label">Button A</string>
+
+</resources>
