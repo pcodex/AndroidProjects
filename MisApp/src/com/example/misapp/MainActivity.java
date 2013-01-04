@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AnalogClock;
 
 public class MainActivity extends Activity {
 	
@@ -29,14 +30,23 @@ public class MainActivity extends Activity {
     public void sendM(View view)
     {       	
     	colval = colval+0xff876888;
-    	Intent mInt = new Intent(this, ClickAct.class);
+    	//Intent mInt = new Intent(this, ClickAct.class);
     	//EditText ed = (EditText)findViewById(R.id.edit_main);
     	//String ss = ed.getText().toString();
     	
     	//mInt.putExtra(XTR, ss);
-    	mInt.putExtra(ACOL, colval);
+    	//mInt.putExtra(ACOL, colval);
+    	//this.finish();
+    	//startActivity(mInt);
+    	
+    	AnalogClock ANC = (AnalogClock)findViewById(R.id.AnaClk);
+    	
+    	ANC.setBackgroundColor(colval);
+    }
+    
+    public void fini(View view)
+    {
     	this.finish();
-    	startActivity(mInt);
     }
     
 }
