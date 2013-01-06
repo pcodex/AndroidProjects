@@ -3,6 +3,7 @@ package com.example.myfragapp;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.Menu;
 
 public class MainActivity extends FragmentActivity {
@@ -55,6 +56,10 @@ public class MainActivity extends FragmentActivity {
     				ft.addToBackStack(null);
     				ft.commit();
         }
+    	
+    	String[] filenames;
+    	filenames = getApplicationContext().fileList();
+    	Log.w("Prab File List", filenames[0]);
     	
     }
         
