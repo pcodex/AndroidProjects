@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CallMa</string>
+    <string name="hello_world">Calling Ma!</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>
