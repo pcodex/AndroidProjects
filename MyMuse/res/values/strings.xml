@@ -3,6 +3,10 @@
 
     <string name="app_name">MyMuse</string>
     <string name="hello_world">My Favourites!</string>
+    <string name="next">NEXT</string>
+    <string name="stop">STOP</string>
+    <string name="play">PLAY</string>
+    <string name="prev">PREV</string>
     <string name="menu_settings">Settings</string>
 
 </resources>
