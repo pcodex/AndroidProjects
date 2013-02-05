@@ -1,12 +1,16 @@
 package com.example.callyou;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -42,7 +46,51 @@ public class MainActivity extends Activity {
         //Receiving contact info
         //pickContact();
     }
-     
+    
+    
+    protected void onPause()
+    {
+    	File fmain;
+    	File myFile;
+    	
+    	Context cxtx = getApplicationContext();
+        String stt = Environment.getExternalStorageState();
+        if(Environment.MEDIA_MOUNTED.equals(stt))
+        	Log.w("ExtStoStt","SD Card present");
+        
+        fmain = new File(cxtx.getExternalFilesDir(Environment.DIRECTORY_NOTIFICATIONS),"Prabhu");
+        
+        if(!fmain.mkdirs()|| !fmain.isDirectory())
+        	Log.e("MyErr", "Dir not created on ext storage");
+        
+                
+        myFile = new File(fmain,"PrabFile.txt");
+        
+        try{
+        	
+        	FileOutputStream fos = new FileOutputStream(myFile);
+        	String astr = "This is some text";
+        	fos.write(astr.getBytes());
+        	fos.close();
+        	Log.w("File Write", "Written to SD card");
+        }
+        catch(Exception e)
+        {
+        	Log.w("FileErr", "Write failed");
+        }
+        
+    	super.onPause();
+    	Intent myInt = new Intent();
+    	myInt.setAction(Intent.ACTION_SEND);
+    	Uri urur = Uri.fromFile(myFile);
+    	
+    	myInt.putExtra(Intent.EXTRA_TEXT, "This is text");
+    	myInt.setType("text/plain");
+    	startActivity(Intent.createChooser(myInt, "Choose the app"));
+    }
+    
+    
+    
     private void pickContact()
     {
     	Log.w("Warning", "entered pickContact");

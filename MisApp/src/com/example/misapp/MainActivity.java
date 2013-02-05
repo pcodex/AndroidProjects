@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AnalogClock;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	
@@ -27,6 +29,30 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    public void onPause()
+    {
+    	super.onPause();
+    	Intent ii = getIntent();
+    	String acti = ii.getAction();
+    	String typ = ii.getType();
+    	
+    	if(Intent.ACTION_SEND.equals(acti))
+    	{
+    		if(typ.equals("text/plain"))
+    		{
+    			
+    			String num = ii.getStringExtra(Intent.EXTRA_TEXT);
+    			TextView tview = new TextView(this);
+    			Log.w("The txt rcd", num);
+    		     tview.setText(num);
+    		
+    		     setContentView(tview);
+    		}
+    			
+    	}
+    	    	
+    }
+    
     public void sendM(View view)
     {       	
     	colval = colval+0xff876888;
@@ -41,7 +67,9 @@ public class MainActivity extends Activity {
     	
     	AnalogClock ANC = (AnalogClock)findViewById(R.id.AnaClk);
     	
-    	ANC.setBackgroundColor(colval);
+    	ANC.setBackgroundColor(colval);	
+    	   	
+    	
     }
     
     public void fini(View view)

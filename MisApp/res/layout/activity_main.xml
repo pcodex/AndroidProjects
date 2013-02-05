@@ -1,8 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity" >
 <!--  
     <EditText
@@ -13,13 +13,31 @@
         android:hint="@string/edit_main" />
     -->
     
+    <AnalogClock
+        android:id="@+id/AnaClk"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"         
+        android:minHeight="100dp"
+        android:minWidth="240dp"
+               
+     />
+    
     <Button 
         android:text="@string/butt_Pra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="210dp"
         android:onClick="sendM"
         />
+    
+    <Button
+        android:text="@string/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="500dp"
+        android:onClick="fini"
+        />
         
-        
-
-</LinearLayout>
+        </AbsoluteLayout>

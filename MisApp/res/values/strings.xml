@@ -8,6 +8,7 @@
     <string name="butt_Pra">Change Color</string>
     <string name="title_activity_click">You come here</string>
     <string name="butt_Bac">Back</string>
+    <string name="exit">Exit</string>
     
 
 </resources>
