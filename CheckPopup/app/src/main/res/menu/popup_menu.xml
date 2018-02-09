@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/enlarge"
+        android:title="Enlarge"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_enlarge"/>
+
+    <item
+        android:id="@+id/reduce"
+        android:title="Reduce"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_reduce"/>
+
+</menu>
