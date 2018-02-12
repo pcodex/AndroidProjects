@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TakeMyTabs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag1text">This is fragment 1</string>
+    <string name="frag2text">This is fragment 2</string>
+    <string name="frag3text">This is fragment 3</string>
+    <string name="frag4text">This is fragment 4</string>
+</resources>
