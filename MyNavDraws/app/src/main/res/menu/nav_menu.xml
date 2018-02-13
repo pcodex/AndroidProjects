@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Science"
+        android:id="@+id/menusci"/>
+    <item android:title="Math"
+        android:id="@+id/menumath"/>
+    <item android:title="History"
+        android:id="@+id/menuhist"/>
+    <item android:title="Geography"
+        android:id="@+id/menugeo"/>
+    <item android:title="Politics"
+        android:id="@+id/menupol"/>
+
+</menu>

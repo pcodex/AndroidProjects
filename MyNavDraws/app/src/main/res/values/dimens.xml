@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navhdrpad">20dp</dimen>
+    <dimen name="apppad">25dp</dimen>
+    <dimen name="navheaderht">150dp</dimen>
+</resources>

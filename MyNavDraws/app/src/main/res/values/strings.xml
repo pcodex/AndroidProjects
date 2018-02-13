@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Nav Draw</string>
+    <string name="opendraw">Draw Open</string>
+    <string name="closedraw">Draw Close</string>
+    <string name="sampletxt1">This is the main text</string>
+    <string name="sampletxt2">This is the 2nd main text</string>
+    <string name="drawerheader">Your Options</string>
+</resources>
