@@ -1,0 +1,2 @@
+This app demonstrates the use of the RecyclerView which can be dynamically updated. The RecyclerView is highly efficient when it comes to displaying long lists since it reuses Views and only uses
+what is necessary in terms of number of views.
