@@ -1,0 +1,2 @@
+This app demonstrates the use of a CardView layout, the Recycler View with its Adapter and Holder, 
+the ItemTouchHelper and the Parcelable interface.
