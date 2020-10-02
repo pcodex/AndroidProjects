@@ -27,7 +27,7 @@ public class FragOne extends Fragment{
 		
 		SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
 		SharedPreferences.Editor ShPrefEd = sharedPref.edit();
-		ShPrefEd.putInt("Year", 77);
+		ShPrefEd.putInt("Year", 07);
 		ShPrefEd.putString("Name", "Prabhu");
 		ShPrefEd.commit();
 	}
